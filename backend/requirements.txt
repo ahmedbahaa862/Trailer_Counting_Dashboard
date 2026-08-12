@@ -1,0 +1,8 @@
+fastapi>=0.116,<1
+uvicorn[standard]>=0.35,<1
+ultralytics>=8.3.200
+clip @ git+https://github.com/ultralytics/CLIP.git
+opencv-python-headless>=4.10
+python-dotenv>=1.0
+pydantic-settings>=2.10
+lap>=0.5.12

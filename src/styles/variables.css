@@ -1,0 +1,18 @@
+:root {
+  font-family: Arial, sans-serif;
+  --dashboard-title-size: .63rem;
+  --dashboard-data-size: .5rem;
+  --text-primary: #f4fbff;
+  --text-secondary: #c9deec;
+  --accent: #00e7f4;
+  --positive: #00e98a;
+  --border: rgba(65, 154, 211, .62);
+  --surface: rgba(2, 24, 50, .5);
+}
+
+* { box-sizing: border-box; }
+html, body, #root { width: 100%; min-height: 100%; margin: 0; }
+body { font-family: Arial, sans-serif; background: #001122; overflow: hidden; }
+button { font: inherit; }
+.text-keys { font-family: Arial, sans-serif !important; font-size: .63rem !important; }
+.data-value { font-family: Arial, sans-serif !important; font-size: .5rem !important; }
