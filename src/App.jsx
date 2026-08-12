@@ -421,8 +421,18 @@ export default function App() {
   return (
     <main className={`dashboard-screen mood-${mood}`}>
       <picture className="dashboard-frame">
-        <img src={mood === 'dark' ? '/assets/dashboard-dark.png' : '/assets/dashboard-light.png'} alt="" />
+        <img src={mood === 'dark' ? '/assets/dashboard-dark.png' : '/assets/camera-page2.png'} alt="" />
       </picture>
+      <img
+        className="dashboard-logo dashboard-logo--ems"
+        src="/assets/EMSLogo2.png"
+        alt="EMS"
+      />
+      <img
+        className="dashboard-logo dashboard-logo--rsookh"
+        src="/assets/Rsookh-logo.png"
+        alt="Rsookh"
+      />
       <button className="mood-toggle-button" type="button" onClick={toggleMood} aria-label={`Switch to ${mood === 'dark' ? 'light' : 'dark'} mood`} title={`Switch to ${mood === 'dark' ? 'light' : 'dark'} mood`}><MoodIcon mood={mood} /></button>
       <CCTVPanel cameraData={liveCameras} />
       <div className="weight-panels">

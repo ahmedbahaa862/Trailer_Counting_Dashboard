@@ -9,7 +9,7 @@ import { dashboardData } from '../../data/mockDashboardData';
 
 export default function DashboardCanvas({ theme, onToggleTheme }) {
   return <main className="dashboard-viewport"><div className={`dashboard-canvas ${theme}`}>
-    <img className="dashboard-background" src={theme === 'dark' ? '/assets/dashboard-dark.png' : '/assets/dashboard-light.png'} alt="" />
+    <img className="dashboard-background" src={theme === 'dark' ? '/assets/dashboard-dark.png' : '/assets/camera-page2.png'} alt="" />
     <Header theme={theme} onToggleTheme={onToggleTheme} />
     <CameraPanel data={dashboardData} />
     <TrafficSummary traffic={dashboardData.traffic} heatmap={dashboardData.heatmap} />

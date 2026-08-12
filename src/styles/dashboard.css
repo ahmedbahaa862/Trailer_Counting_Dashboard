@@ -34,6 +34,43 @@ button { font: inherit; }
 
 .dashboard-frame > img { object-fit: fill; }
 
+/*
+ * Header logos — tweak the custom properties below to reposition freely.
+ * .cctv-panel starts at left 3.52%, top 5.69%.
+ * .traffic-summary starts at left 64.53%, top 5.69%.
+ */
+.dashboard-logo {
+  position: absolute;
+  z-index: 15;
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.dashboard-logo--ems {
+  --logo-top: 2.5%;
+  --logo-left: 4.2%;
+  --logo-width: clamp(72px, 9.3vw, 168px);
+  --logo-translate-x: 0;
+  --logo-translate-y: 0;
+  top: var(--logo-top);
+  left: var(--logo-left);
+  width: var(--logo-width);
+  transform: translate(var(--logo-translate-x), var(--logo-translate-y));
+}
+
+.dashboard-logo--rsookh {
+  --logo-top: -1.7%;
+  --logo-right: 4.7%;
+  --logo-width: clamp(72px, 7.5vw, 168px);
+  --logo-translate-x: 0;
+  --logo-translate-y: 0;
+  top: var(--logo-top);
+  right: var(--logo-right);
+  width: var(--logo-width);
+  transform: translate(var(--logo-translate-x), var(--logo-translate-y));
+}
+
 /* Exact bounds of the large upper-left frame in the 3840 × 2160 shell. */
 .cctv-panel {
   position: absolute;
