@@ -14,5 +14,5 @@
 html, body, #root { width: 100%; min-height: 100%; margin: 0; }
 body { font-family: Arial, sans-serif; background: #001122; overflow: hidden; }
 button { font: inherit; }
-.text-keys { font-family: Arial, sans-serif !important; font-size: .63rem !important; }
-.data-value { font-family: Arial, sans-serif !important; font-size: .5rem !important; }
+.text-keys { font-family: Arial, sans-serif !important; }
+.data-value { font-family: Arial, sans-serif !important; }
