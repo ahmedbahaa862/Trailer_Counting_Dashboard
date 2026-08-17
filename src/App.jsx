@@ -13,9 +13,9 @@ const DESIGN_WIDTH = 1920;
 const DESIGN_HEIGHT = 1080;
 
 const cameras = [
-  { id: 1, name: 'Camera 1', connected: true, source: '/assets/gate-camera.svg', detectedTrucks: 18, queueCount: 3 },
-  { id: 2, name: 'Camera 2', connected: true, source: '/assets/gate-camera.svg', detectedTrucks: 12, queueCount: 2 },
-  { id: 3, name: 'Camera 3', connected: false, source: '/assets/gate-camera.svg', detectedTrucks: 0, queueCount: 0 },
+  { id: 1, name: 'Camera 1', connected: true, source: '/assets/camera-yard.png', detectedTrucks: 18, queueCount: 3 },
+  { id: 2, name: 'Camera 2', connected: true, source: '/assets/camera-yard.png', detectedTrucks: 12, queueCount: 2 },
+  { id: 3, name: 'Camera 3', connected: false, source: '/assets/camera-yard.png', detectedTrucks: 0, queueCount: 0 },
 ];
 
 const weightData = [
@@ -653,7 +653,7 @@ export default function App() {
   const liveCameras = snapshot?.cameras?.length
     ? snapshot.cameras.map((camera) => ({
         ...camera,
-        source: camera.connected ? cameraStreamUrl(camera.id) : '/assets/gate-camera.svg',
+        source: camera.connected ? cameraStreamUrl(camera.id) : '/assets/camera-yard.png',
       }))
     : cameras;
   const liveTraffic = snapshot?.traffic
